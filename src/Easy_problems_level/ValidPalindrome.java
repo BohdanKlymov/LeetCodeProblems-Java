@@ -1,21 +1,22 @@
 package Easy_problems_level;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 //  A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and
 //  removing all non-alphanumeric characters, it reads the same forward and backward.
 //  Alphanumeric characters include letters and numbers.
+//  Return true if it is a palindrome, or false otherwise.
 
 public class ValidPalindrome {
-    public static void main (String[] args) {
+    static void main (String[] args) {
 
         String s = getString();
         s = s.toLowerCase();
 
         String convertedText = letNumbersAndLetters(s);
 
-        palindromeVerification(convertedText);
+        String reversedText = reverseText(convertedText);
 
+        System.out.println(palindromeVerification(convertedText, reversedText));
     }
 
     public static String getString() {
@@ -31,21 +32,31 @@ public class ValidPalindrome {
 
     public static String letNumbersAndLetters(String s) {
 
-        String conventedText = "";
+        StringBuilder convertedText = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
 
             char currentChar = s.charAt(i);
 
-            if (Character.isDigit(currentChar) || Character.isLetter(currentChar)) {
-                conventedText += currentChar;
+            if (Character.isLetterOrDigit(currentChar)) {
+                convertedText.append(currentChar);
             }
         }
-        return conventedText;
+
+        return convertedText.toString();
     }
 
-    public static Boolean palindromeVerification(String convertedText) {
+    public static String reverseText(String convertedText) {
+        StringBuilder sb = new StringBuilder();
 
+        for (int i = convertedText.length() - 1; i >= 0; i--) {
+            sb.append(convertedText.charAt(i));
+        }
+
+        return sb.toString();
     }
 
+    public static Boolean palindromeVerification(String convertedText, String reversedText) {
+        return convertedText.equals(reversedText);
+    }
 }
