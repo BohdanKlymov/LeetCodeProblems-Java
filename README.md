@@ -1,46 +1,83 @@
 # LeetCodeProblems-Java
 
-This repository contains my solutions to LeetCode problems solved using Java.
+This repository contains my solutions to LeetCode problems implemented in Java.
 
-The main goal of this project is to improve my programming skills, logical thinking, and problem-solving ability.
-I am solving problems step by step, starting from easier exercises and gradually moving toward harder and more complex challenges.
+The main purpose of this project is to strengthen my programming fundamentals, improve logical thinking, and develop strong problem-solving skills. I am solving problems progressively — starting from Easy level and gradually advancing to Medium and Hard challenges.
+
+All solutions stored in this repository are IntelliJ IDEA project versions.
+The official submission versions are uploaded and verified directly on LeetCode.
 
 ---
 
 ## Goals
 
-- Strengthen Java fundamentals
+Strengthen Java fundamentals
 
-- Improve algorithmic thinking
+Improve algorithmic and analytical thinking
 
-- Practice data structures
+Practice core data structures
 
-- Build consistency through daily problem solving
+Understand time and space complexity
 
-- Track my learning progress over time
+Write clean, readable, and efficient code
 
---- 
+Build consistency through regular problem solving
 
-## Progress Strategy
+Track long-term progress
 
-1. Start with Easy problems
+---
 
-2. Move to Medium problems
+## Learning Strategy
 
-3. Finally tackle Hard problems
+Start with Easy problems to build a strong foundation
 
-4. Focus on:
+Move to Medium problems to handle increased complexity
 
-    - Time complexity
+Progress to Hard problems to challenge advanced skills
 
-    - Space complexity
+Continuously refactor older solutions as knowledge improves
 
-    - Writing clean and efficient code
+### Special focus on:
+
+- Time complexity analysis
+
+- Space complexity optimization
+
+- Clean code principles
+
+- Logical clarity
+
+---
+
+## Folder Structure
+
+| Folder | Description |
+|--------|-------------|
+| `src/easy` | Easy level LeetCode problems |
+| `src/medium` | Medium level LeetCode problems |
+| `src/hard` | Hard level LeetCode problems |
+| `.gitignore` | Git ignored files |
+| `.idea` | IntelliJ project settings |
+
+Problems are organized by difficulty level to clearly track progression and learning growth.
+
+---
+
+## Development Environment
+
+Language: Java
+
+IDE: IntelliJ IDEA
+
+Platform for submissions: LeetCode
+
+This repository contains only IntelliJ IDEA implementations.
+All official submissions are completed and verified directly on LeetCode.
 
 ---
 
 ## Notes
 
-This repository is mainly for learning purposes.
+This repository represents my continuous learning journey.
 
-Solutions may improve over time as my understanding grows.
+Solutions may be refactored, optimized, or rewritten over time as my understanding deepens and my skills improve.
